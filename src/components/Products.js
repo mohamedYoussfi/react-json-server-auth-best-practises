@@ -59,7 +59,7 @@ function Products(props) {
    navigate(`/catalog/editProduct/${product.id}`)
   }
   function handleSearch(){
-    getProducts({query:keyword});
+    getProducts({query:keyword, page :1});
   }
   function handleGotoPage(page){
     getProducts({query:keyword, page});
